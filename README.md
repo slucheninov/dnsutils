@@ -15,10 +15,10 @@ Network utilites traceroute, ping and mtr
 
 Doker:
 ```bash
-docker run -it autosetup/dnsutils:0.0.1 dig google.com
+docker run -it autosetup/dnsutils:0.0.3 dig google.com
 ```
 
 Kubernetes:
 ```bash
-kubectl run -it --rm --restart=Never busybox --image=autosetup/dnsutils:0.0.1 bash
+kubectl run -it --rm --restart=Never busybox --image=autosetup/dnsutils:0.0.3 bash
 ```
