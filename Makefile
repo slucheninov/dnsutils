@@ -1,0 +1,11 @@
+ACCOUNT_NAME := autosetup
+PROJECT_NAME := dnsutils
+TAG ?= 0.0.1
+
+
+build::
+	docker build -t $(PROJECT_NAME):$(TAG) .
+	docker image tag $(PROJECT_NAME):$(TAG) $(ACCOUNT_NAME)/$(PROJECT_NAME):$(TAG)
+
+install::
+	docker push $(ACCOUNT_NAME)/$(PROJECT_NAME):$(TAG)
