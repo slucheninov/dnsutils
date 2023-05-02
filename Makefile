@@ -1,6 +1,6 @@
 ACCOUNT_NAME := autosetup
 PROJECT_NAME := dnsutils
-TAG ?= 0.0.3
+TAG ?= 0.0.4
 
 
 build::
